@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Results summary component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,12 +19,73 @@
   </style>
 </head>
 <body>
-
+  <div class="component">
+    <div class="component-container">
+      <div class="component-container--left">
+        <p>
+          Your Result
+        </p>
+        <div class="component-container--left__percentage">
+          <p>
+            76
+          </p>
+          <p>
+            of 100
+          </p>
+        </div>
+        <p>
+          Great
+        </p>
+        <p>
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+      <div class="component-container--right">
+        <p>
+          Summary
+        </p>
+        <div class="component-container--right__elements">
+          <ul>
+            <li><a href="/">
+              <span class="icon icon-reaction"></span>
+              Reacion
+              <p class="score">
+                <span>80</span> / 100
+              </p>
+            </a></li>
+            <li><a href="/">
+              <span class="icon icon-memory"></span>
+              Memory
+              <p class="score">
+                <span>92</span> / 100
+              </p>
+            </a></li>
+            <li><a href="/">
+              <span class="icon icon-verbal"></span>
+              Verbal
+              <p class="score">
+                <span>61</span> / 100
+              </p>
+            </a></li>
+            <li><a href="/">
+              <span class="icon icon-visual"></span>
+              Visual
+              <p class="score">
+                <span>72</span> / 100
+              </p>
+            </a></li>
+          </ul>
+        </div>
+        <button type="submit">
+          Continue
+        </button>
+      </div>
+    </div>
+  </div>
   
-
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>
